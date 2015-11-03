@@ -1,24 +1,31 @@
 <?php
 //config
-
-$config['email']['from'] 		== 'email@demo.nl';
-$config['email']['fromName'] 	== 'Demo from Sample Company';
-$config['email']['bcc']			== 'email@demo.nl';
-$config['email']['subject']		== 'Your invoice from Sample company';
-
-$config['email']['smtphost'] 	== 'smtp-relay.gmail.com';
-$config['email']['smtphauth'] 	== true;
-$config['email']['smtpuser'] 	== 'email@demo.com';
-$config['email']['smtppass'] 	== 'Sup3rS3cretpass';
-$config['email']['smtpsec'] 	== 'tls';
-$config['email']['smtpport'] 	== 587;
-
-$config['twilio']['sid']		== 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
-$config['twilio']['authtoken']  == 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
-$config['twilio']['number']		== 'xxx-xxx-xxx';
-$config['twilio']['messsage']	== "Dear $name, we just send you the invoice for the new services of $amount. Please check your email";
-
-$config['invoice']['adress'] 	== "<b>Sample company</b><br>Sample Street 1<br>1234AB Amsterdam<br>The Netherlands</p><p>Tel:   (+xx) (x)xx xxx xxxx<br>Int:    +x xxx-xxx-xxx<br>Mail: demo@company.com ";
-$config['incoice']['banktype']  == 'IBAN';
-$config['incoice']['banknum']   == 'NLxx ABNA xxxx xxxx xx';
-$config['incoice']['bankname']  == 'Your name';
+$config = array(
+	'email'=>array(
+		'from' => 'from@domain.com',
+		'fromName' => 'John from Company LLC',
+		'bcc' => 'invoice@company.com',
+		'subject' => 'Your invoice from Company LLC',
+		
+		'smtphost' => 'smtp-relay.gmail.com',
+		'smtphauth' => true,
+		'smtpuser' => 'from@domain.com',
+		'smtppass' => 'Sup3rS3cretpassw0RD#@',
+		'smtpsec' => 'tls',
+		'smtpport' => 587
+	),
+	
+	'twilio'=>array(
+		'sid' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+		'authtoken' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+		'number' => 'xxx-xxx-xx',
+		'messsage' => "Dear %s, we have just sent you the invoice of &euro;%s. If you didn't pay yet? The please transfer the money to IBAN XX12 XXXX 1234 1234 12 In the name of John Doe, indicating %s",
+	),
+	
+	'invoice'=>array(
+		'adress' => "<b>Company LLC</b><br>Broadstreet 139<br>8302AA Amsterdam<br>The Netherlands</p><p>Tel:   (+31) (0)12 123 1234<br>Int:    +1 123-123-123<br>Mail: john@domain.com ",
+		'banktype' => 'IBAN',
+		'banknum' => 'IBAN XX12 XXXX 1234 1234 12',
+		'bankname' => 'John Doe'
+	)
+);

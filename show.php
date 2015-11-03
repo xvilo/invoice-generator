@@ -110,8 +110,8 @@
 	 <tr style="clear:both;">
 		 <td> <p style="margin-top:60px;"><b>Betaling factuur</b><br>
 	Is deze factuur nog niet betaald, dan zien we de betaling graag voor <?php echo date('d-m-Y', strtotime($_POST['desc']['factdate']. ' + 14 days')); ?> 
-	tegemoet op <?php echo $config['incoice']['banktype']?> <b><i><?php echo $config['incoice']['banknum']?></i></b> ten name van 
-	<b><i><?php echo $config['incoice']['bankname'] ?></i></b> onder vermelding van het kenmerk <b><i><?php echo $_POST['desc']['custno'] ?>/<?php echo $_POST['desc']['factno'] ?></i></b></p></td></tr>
+	tegemoet op <?php echo $config['invoice']['banktype']?> <b><i><?php echo $config['invoice']['banknum']?></i></b> ten name van 
+	<b><i><?php echo $config['invoice']['bankname'] ?></i></b> onder vermelding van het kenmerk <b><i><?php echo $_POST['desc']['custno'] ?>/<?php echo $_POST['desc']['factno'] ?></i></b></p></td></tr>
 	 </tr>
 	</table>
 </body>

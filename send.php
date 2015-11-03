@@ -4,7 +4,7 @@
 	include('show.php');
     $mailcontents = ob_get_clean();
 	
-	require 'config.php'
+	require_once 'config.php';
 	require 'phpmailer/PHPMailerAutoload.php';
 
 	$mail = new PHPMailer;
@@ -68,6 +68,7 @@
  
     // Step 5: Loop over all our friends. $number is a phone number above, and 
     // $name is the name next to it
+    $message = sprintf($config['twilio']['messsage'], $_POST['recp']['company'], $amount, $paybefore, $kenmerk);
     foreach ($people as $number => $name) {
  
         $sms = $client->account->messages->sendMessage(
@@ -80,11 +81,11 @@
             $number,
  
             // the sms body
-            $config['twilio']['messsage']
+            $message
         );
  
         // Display a confirmation message on the screen
-        echo "Sent message to $name";
+        echo "<br>SMS message has been send to $name<br>Message: $message";
     }
 
 	?>
