@@ -95,16 +95,13 @@
 	  <hr style="margin:0px;">
 	  </td>
 	 </tr>
-	 <tr style="clear:both;">
-		 &nbsp;
-	 </tr>
 	 <tr style="width: 220px; float:right;">
 	  <td class="sender" style="padding-left: 10px;display: block;">
-		<p>Subtotaal: &euro; <span style="text-align: right;"><?php echo number_format($total, 2, ',', '.') ?></span><br>
-	 <!--  Btw: <?php echo $total * 0.21 ?> --></p>
+		<p>Subtotaal : &euro; <span style="text-align: right;"><?php echo number_format($total, 2, ',', '.') ?></span><br>
+	       Btw (21%): &euro; <?php echo number_format($total * 0.21, 2, ',', '.')?></p>
    </p>
    <hr>
-   <p><b>Totaal: &euro; <?php echo number_format($total, 2, ',', '.')?></b></p>
+   <p><b>Totaal: &euro; <?php echo number_format($total * 1.21, 2, ',', '.')?></b></p>
 		</td>
 	 </tr>
 	 <tr style="clear:both;">

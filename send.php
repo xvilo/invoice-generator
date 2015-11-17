@@ -8,7 +8,7 @@
 	require 'phpmailer/PHPMailerAutoload.php';
 
 	$mail = new PHPMailer;
-	$amount = number_format($total, 2, ',', '.');
+	$amount = number_format($total * 1.21, 2, ',', '.');
 	$kenmerk = $_POST['desc']['custno']."/".$_POST['desc']['factno'];
 	$paybefore = date('d-m-Y', strtotime($_POST['desc']['factdate']. ' + 14 days'));
 	
