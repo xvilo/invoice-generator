@@ -27,5 +27,6 @@ $config = array(
 		'banktype' => 'IBAN',
 		'banknum' => 'IBAN XX12 XXXX 1234 1234 12',
 		'bankname' => 'John Doe'
+		'logoimg' => 'http://domain.com/logoInvoice.png'
 	)
 );

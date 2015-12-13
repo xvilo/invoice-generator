@@ -12,7 +12,7 @@
 	<table align="center" border="0" cellpadding="0" cellspacing="0" width="700">
 	 <tr style="width: 350px; float: left;">
 	  <td style="display:block;border: none;">
-	   <img src="https://xvilo.com/factuur/img/logo.png">
+	   <img src="<?php echo $config['invoice']['logoimg']?>">
 	  </td>
 	  <td style="display:block;border: none;">
 	  <h1>Factuur</h1>
