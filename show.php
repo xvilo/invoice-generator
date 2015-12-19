@@ -42,16 +42,16 @@
 	 </tr>
 	 <tr style="width: 700px; float: left; margin-top:30px;">
 	  <td style="width:363px; float:left; display:block;border: none;">
-	  	<h6>Artikel</h6>
+	  	<p>Artikel</p>
 	  </td>
 	  <td style="width: 125px; float:left; display:block;border: none;">
-	  	<h6>Prijs per stuk</h6>
+	  	<p>Prijs per stuk</p>
 	  </td>
 	  <td style="width: 115px; float:left; display:block;border: none;">
-	  	<h6>Aantal</h6>
+	  	<p>Aantal</p>
 	  </td>
 	  <td style="width: 97px; float:left; display:block;border: none;">
-	  	<h6>Prijs totaal</h6>
+	  	<p>Prijs totaal</p>
 	  </td>
 	  <td style="clear: both;    height: 0px;
     display: block;">&nbsp;</td>
@@ -68,16 +68,16 @@
 			?>
 	 <tr style="width: 700px; float: left; margin-top:0px;">
 	  <td style="width:363px; float:left; display:block;border: none;">
-	  	<h6><?php echo $v[0] ?></h6>
+	  	<p><?php echo $v[0] ?></p>
 	  </td>
 	  <td style="width: 125px; float:left; display:block;border: none;">
-	  	<h6>&euro; <?php echo number_format($v[1], 2, ',', '.') ?></h6>
+	  	<p>&euro; <?php echo number_format($v[1], 2, ',', '.') ?></p>
 	  </td>
 	  <td style="width: 115px; float:left; display:block;border: none;">
-	  	<h6> <?php echo $v[2] ?></h6>
+	  	<p> <?php echo $v[2] ?></p>
 	  </td>
 	  <td style="width: 97px; float:left; display:block;border: none;">
-	  	<h6>&euro; <?php echo number_format($v[1] * $v[2], 2, ',', '.') ?></h6>
+	  	<p>&euro; <?php echo number_format($v[1] * $v[2], 2, ',', '.') ?></p>
 	  </td>
 	  <td style="clear: both;    height: 0px;
     display: block;">&nbsp;</td>

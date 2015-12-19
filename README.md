@@ -1,7 +1,6 @@
 # invoice-generator
 PHP invoice generator with send by mail. And twilio SMS intergration
-
-## config
+## Details
 The only thing you need to do is change the config.php file. That's all. 
 
 ### Features
@@ -11,14 +10,13 @@ The only thing you need to do is change the config.php file. That's all.
 * Sends a text (SMS) message as bonus. Uses Twilio service for that.
 
 ### Bugs
-* Sometimes email is not being displayed correctly.
 * Better handling when invoice has been sent.
 
-### What needs to done in feature updates
+### What needs to be done in feature updates
 * Disable/enable VAT/TAX in config and the amount.
 * PDF attachment of invoice by mail.
 * Online archive of sent invoices (weblink/webview).
-* Remembering Customer details. Selecting a customer and get all information prefilled.
+* Remembering customer details. Selecting a customer and get all information prefilled.
 * Check for better handling of international cellphone number.
 * Pay your invoice online with PSP intergration for Paypal (creditcard) and iDeal.
 * Monthly export to SEPA-debitbatches in the PAIN (XML) format. (for direct debit possibility)

@@ -26,7 +26,7 @@ $config = array(
 		'adress' => "<b>Company LLC</b><br>Broadstreet 139<br>8302AA Amsterdam<br>The Netherlands</p><p>Tel:   (+31) (0)12 123 1234<br>Int:    +1 123-123-123<br>Mail: john@domain.com ",
 		'banktype' => 'IBAN',
 		'banknum' => 'IBAN XX12 XXXX 1234 1234 12',
-		'bankname' => 'John Doe'
+		'bankname' => 'John Doe',
 		'logoimg' => 'http://domain.com/logoInvoice.png'
 	)
 );
